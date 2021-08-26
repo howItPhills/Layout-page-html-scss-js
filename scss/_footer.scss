@@ -1,0 +1,30 @@
+.footer {
+   padding: 60px 0px 40px 0px;
+   text-align: center;
+   background: $greyishBlack;
+   &__images {
+      margin-bottom: 33px;
+      a {
+         &:not(:last-child) {
+            margin-right: 32px;
+         }
+      }
+   }
+
+   &__icon {
+      color: $darkGray;
+      &-1 {
+         color: $brightBlue;
+      }
+      transition: all 0.3s ease;
+      &:hover {
+         transform: scale(1.2);
+      }
+   }
+   &__text {
+      text-transform: uppercase;
+      font-size: $fz-sm;
+      color: $darkGray;
+      font-weight: 600;
+   }
+}

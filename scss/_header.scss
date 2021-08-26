@@ -1,0 +1,113 @@
+.header {
+   background: url("../img/header/Back.jpg") 0 0 / cover no-repeat, #15141a;
+   padding-top: 155px;
+
+   &.open {
+      .header__burger {
+         > span:first-child {
+            transform: rotate(45deg);
+         }
+         > span:last-child {
+            transform: rotate(-45deg);
+         }
+         > span:nth-child(2) {
+            opacity: 0;
+         }
+      }
+      .header__menu {
+         visibility: visible;
+         animation: fade-in 0.3s ease forwards;
+      }
+      .overlay {
+         display: block;
+         animation: fade-in 0.3s ease forwards;
+      }
+   }
+
+   &__burger {
+      display: none;
+      cursor: pointer;
+      > span {
+         transition: all 0.3s ease-in-out;
+         display: block;
+         width: 25px;
+         height: 3px;
+         background: $gray;
+         transition: all 0.3s ease-in-out;
+         transform-origin: 1.3px 2px;
+         &:not(:last-child) {
+            margin-bottom: 5px;
+         }
+      }
+   }
+
+   &__nav {
+      width: 100%;
+      max-width: 100%;
+      left: 0;
+      padding: 10px 10px;
+      position: fixed;
+      top: 0;
+      background: #16151b;
+      z-index: 10;
+   }
+
+   &__logo {
+      flex: 0 0 7.5rem;
+   }
+   &__menu {
+      gap: 1.25rem;
+   }
+
+   & .container {
+      padding: 0 15px;
+   }
+   &__link {
+      display: inline-block;
+      padding: 5px;
+      font-size: 1rem;
+      color: $white;
+      font-weight: 600;
+      transition: all 0.5s ease;
+      border-radius: 5px;
+      &:focus,
+      &:hover {
+         outline: 1px solid $white;
+         background: #fff;
+         color: $black;
+      }
+   }
+
+   &__offer {
+      padding-bottom: 110px;
+      margin-top: 41px;
+      flex: 0 0 42%;
+   }
+
+   &__intro {
+      margin-bottom: 30px;
+   }
+
+   &__title {
+      font-size: $fz-huge;
+      color: $white;
+      letter-spacing: 0;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 40px;
+   }
+
+   &__text {
+      margin-bottom: 70px;
+   }
+
+   &__button {
+      &:not(:last-child) {
+         margin-right: 20px;
+      }
+   }
+   &__dashes {
+      margin-top: -10px;
+      margin-left: 5px;
+   }
+}

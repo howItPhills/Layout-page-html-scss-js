@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap");
+
+body {
+   font-family: "Source Sans Pro", sans-serif;
+   color: $gray;
+   font-size: $fz-med;
+   &.noscroll {
+      overflow: hidden;
+   }
+}
+
+.container {
+   width: 100%;
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.flex {
+   display: flex;
+
+   &-jc-sb {
+      justify-content: space-between;
+   }
+   &-ai-c {
+      align-items: center;
+   }
+
+   &-jc-c {
+      justify-content: center;
+   }
+   &-fd-c {
+      flex-direction: column;
+   }
+   &-jc-sa {
+      justify-content: space-around;
+   }
+   &-jc-se {
+      justify-content: space-evenly;
+   }
+}
+
+.grid {
+   display: grid;
+}
+
+.dashes {
+   span {
+      display: inline-block;
+      height: 2px;
+      width: 18px;
+      background: $brightBlue;
+      &:not(:last-child) {
+         margin-right: 5px;
+      }
+   }
+}
+
+.intro {
+   letter-spacing: 0.111rem;
+   font-size: $fz-sm;
+   color: $brightBlue;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.btn {
+   display: inline-block;
+   width: 10rem;
+   height: 3.19rem;
+   text-align: center;
+   line-height: 2.9rem;
+   text-transform: uppercase;
+   background: $brightBlue;
+   color: $white;
+   border-radius: 3px;
+   border: 2px solid $brightBlue;
+   font-size: $fz-sm;
+   font-weight: bold;
+   transition: all 0.3s ease;
+   &:hover,
+   &:focus {
+      outline: 1px solid $brightBlue;
+      background: #46b9f3;
+   }
+   &__empty {
+      background: none;
+      border: 2px solid $darkGray;
+      &:hover,
+      &:focus {
+         outline: 1px solid #83838d;
+         background: #83838d;
+      }
+   }
+}
+
+.title {
+   font-size: $fz-large;
+   font-weight: 600;
+   color: $black;
+   margin-bottom: 30px;
+   &__1 {
+      color: $white;
+   }
+}

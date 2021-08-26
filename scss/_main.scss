@@ -1,0 +1,351 @@
+// FEATURES
+.features {
+   text-align: center;
+   padding: 70px 0;
+   border-bottom: 1px solid #ededed;
+
+   &__header {
+      margin-bottom: 50px;
+   }
+   &__column {
+      padding: 20px 20px;
+   }
+
+   &__circle {
+      width: 90px;
+      height: 90px;
+      border: 1px solid $lightGray;
+      border-radius: 50%;
+      margin: 0 auto;
+      line-height: 5.75;
+      margin-bottom: 30px;
+   }
+   &__wrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+   &__title {
+      font-size: $fz-semilar;
+      color: $black;
+      margin-bottom: 15px;
+   }
+}
+
+//DETAILS
+
+.details {
+   padding-top: 65px;
+   &__header {
+      margin-bottom: 50px;
+   }
+   &__offer {
+      margin-top: 55px;
+      flex: 0 0 42%;
+      margin-right: 50px;
+   }
+   &__text {
+      margin-bottom: 40px;
+   }
+
+   &__list {
+      li {
+         color: $black;
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+   }
+
+   &__image {
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+      &-1 {
+         margin-right: 13px;
+         margin-left: 3px;
+      }
+   }
+}
+
+//CUSTOMIZE
+
+.customize {
+   background: #f2f2f2;
+   &__header {
+      margin-bottom: 50px;
+   }
+   &__offer {
+      margin-top: 133px;
+      flex: 0 0 41%;
+   }
+}
+
+//QUOTES
+
+.quotes {
+   text-align: center;
+   padding: 65px 0px;
+   background: url("../img/plans/back2.jpg") center/ cover no-repeat;
+   color: $white;
+
+   &__title {
+      color: $white;
+   }
+   &__header {
+      margin-bottom: 94px;
+   }
+
+   &__wrapper {
+      margin-bottom: 132px;
+   }
+
+   &__column {
+      flex: 0 0 47%;
+   }
+
+   &__quote {
+      font-size: $fz-semilar;
+      font-style: italic;
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 26px;
+      line-height: 2rem;
+   }
+
+   &__author {
+      text-align: left;
+      margin-top: 3px;
+   }
+
+   &__photo {
+      margin-right: 24px;
+   }
+   &__name {
+      margin-bottom: 7px;
+   }
+
+   &__job {
+      font-size: $fz-sm;
+      font-weight: bold;
+   }
+
+   &__dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:not(:last-child) {
+         margin-right: 0.625rem;
+      }
+      &.active {
+         background: $white;
+         transform: scale(1.3);
+      }
+      &:hover {
+         transform: scale(1.3);
+      }
+   }
+}
+
+// LIKE
+.like {
+   padding: 60px 0px;
+   background: $greyishBlack;
+
+   &__text {
+      color: $white;
+      font-size: $fz-large;
+      font-weight: 600;
+      span {
+         font-weight: 300;
+      }
+   }
+
+   &__buttons {
+      a {
+         &:not(:last-child) {
+            margin-right: 20px;
+         }
+      }
+   }
+}
+
+//PRICE
+.price {
+   padding: 60px 0;
+   text-align: center;
+
+   &__header {
+      margin-bottom: 70px;
+   }
+   &__title {
+      &-1 {
+         color: $black;
+         font-size: $fz-semilar;
+         font-weight: bold;
+         text-transform: uppercase;
+         border-bottom: 2px solid $lightestGray;
+         padding: 25px 0px;
+      }
+   }
+
+   &__wrapper {
+      height: 100%;
+      gap: 1.75rem;
+      align-items: stretch;
+      & > * {
+         width: 100%;
+      }
+   }
+   &__column {
+      border: 2px solid $lightestGray;
+      transition: all 0.5s ease;
+      &:hover {
+         .price__price {
+            transition: all 0.5s ease;
+            background: $brightBlue;
+            color: $white;
+            > span {
+               color: $white;
+            }
+         }
+         .price__title {
+            transition: all 0.5s ease;
+            color: $brightBlue;
+         }
+         .price__button {
+            transition: all 0.5s ease;
+            background: $brightBlue;
+            color: $white;
+            border: 2px solid $brightBlue;
+         }
+      }
+   }
+
+   &__price {
+      border-bottom: 2px solid $lightestGray;
+      padding: 40px 0;
+      .number {
+         font-size: $fz-hugest;
+         color: $black;
+         font-weight: 600;
+      }
+      .dollar {
+         font-size: $fz-large;
+         font-weight: 600;
+         color: $black;
+         position: relative;
+         bottom: 15px;
+      }
+   }
+
+   &__text {
+      margin: 0 auto;
+      margin-bottom: 43px;
+      flex: 1 1 auto;
+      padding: 50px 35px 0 35px;
+      span {
+         color: $brightBlue;
+      }
+   }
+
+   &__button {
+      border: 2px solid $lightestGray;
+      color: $brightBlue;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      &:focus {
+         background: $brightBlue;
+         color: $white;
+         border: 2px solid $brightBlue;
+         outline: none;
+      }
+   }
+}
+
+//CONTACT
+.contact {
+   position: relative;
+   padding-top: 60px;
+   background: #ededed;
+   text-align: center;
+
+   &__header {
+      margin-bottom: 58px;
+   }
+
+   &__wrapper {
+      margin-bottom: 72px;
+      // gap: 16rem;
+      & > * {
+         width: 12.8rem;
+      }
+   }
+
+   &__column {
+      &-1 {
+         width: 9.375rem;
+      }
+   }
+
+   &__image {
+      margin-bottom: 25px;
+   }
+
+   &__form {
+      gap: 1.125rem;
+      position: relative;
+      top: 3rem;
+      padding: 60px 60px 40px 60px;
+      max-width: 48.2rem;
+      margin: 0 auto;
+      background: $greyishBlack;
+      & > * {
+         width: 100%;
+      }
+   }
+   &__inputs {
+      gap: 1.25rem;
+      input {
+         color: $white;
+         display: block;
+         width: 100%;
+         height: 2.8rem;
+         padding: 23px 15px;
+         background: $greyishBlack;
+         border: 2px solid #444348;
+         border-radius: 5px;
+         &::placeholder {
+            font-size: $fz-sm;
+            font-weight: bold;
+         }
+      }
+   }
+
+   &__textarea {
+      width: 100%;
+      height: 11.9rem;
+      padding: 15px 14px;
+      display: block;
+      color: $white;
+      resize: none;
+      background: $greyishBlack;
+      border: 2px solid #444348;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      &::placeholder {
+         font-size: $fz-sm;
+         font-weight: bold;
+      }
+   }
+
+   &__button {
+      align-self: flex-end;
+      font-family: "Source Sans Pro", sans-serif;
+   }
+   &__map {
+      width: 100%;
+   }
+}

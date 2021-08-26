@@ -1,0 +1,245 @@
+// HEADER
+
+@media screen and (max-width: 1024px) {
+   .header__image {
+      display: none;
+   }
+   .header__offer {
+      margin: 0 auto;
+      text-align: center;
+      flex: 0 1 65%;
+   }
+}
+
+@media screen and(max-width: 768px) {
+   .header__menu {
+      padding: 10px 0;
+      flex-direction: column;
+      gap: 0.75rem;
+      animation: fade-out 0.5s ease forwards;
+      opacity: 0;
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      text-align: center;
+      background: #16151b;
+      width: 100%;
+      padding-top: 50px;
+      z-index: -1;
+      height: auto;
+      a {
+         display: block;
+         font-size: $fz-med;
+      }
+   }
+
+   .header__burger {
+      display: block;
+      z-index: 4;
+   }
+   .overlay {
+      display: none;
+      animation: fade-out 0.2s ease forwards;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 2;
+      background: linear-gradient($greyishBlack, transparent);
+      opacity: 0;
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .header__offer {
+      flex: 0 1 100%;
+   }
+   .header__button {
+      &:not(:last-child) {
+         margin-right: 0;
+         margin-bottom: 20px;
+      }
+   }
+}
+
+// MAIN>SECTION.FEATURES
+
+@media screen and(max-width: 992px) {
+   .features__wrapper {
+      grid-template: 1fr 1fr/ 1fr 1fr;
+   }
+   .column {
+      &:nth-child(1),
+      &:nth-child(2) {
+         margin-bottom: 20px;
+      }
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .features__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+   }
+   .column {
+      padding: 0;
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+   }
+}
+
+// MAIN>SECTION.DETAILS
+
+@media screen and (max-width: 992px) {
+   .details__devices {
+      display: none;
+   }
+   .details__offer {
+      margin: 0 auto;
+      text-align: center;
+      flex: 0 1 60%;
+   }
+   .details__list {
+      margin-bottom: 70px;
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .details__offer {
+      flex: 0 1 95%;
+   }
+}
+
+// MAIN>SECTION.CUSTOMIZE
+
+@media screen and (max-width: 1200px) {
+   .customize__image {
+      display: none;
+   }
+   .customize__offer {
+      margin: 0 auto;
+      text-align: center;
+      flex: 0 1 70%;
+      padding: 70px 0px;
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .customize__offer {
+      flex: 0 1 95%;
+   }
+}
+
+// MAIN>SECTION.QUOTES
+
+@media screen and (max-width: 1024px) {
+   .quotes__column {
+      flex: 0 0 42%;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .quotes__wrapper {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 70px;
+   }
+   .quotes__column {
+      blockquote {
+         margin: 0 auto;
+         text-align: center;
+         width: 75%;
+         margin-bottom: 30px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+   }
+   .quotes__about {
+      width: auto;
+      margin: 0 auto;
+      justify-content: center;
+   }
+   .quotes__dashes {
+      margin-bottom: 80px;
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .quotes__column {
+      blockquote {
+         width: 90%;
+      }
+   }
+}
+
+// MAIN>SECTION.LIKE
+
+@media screen and (max-width: 1200px) {
+   .like__wrapper {
+      flex-direction: column;
+      text-align: center;
+   }
+   .like__text {
+      margin-bottom: 40px;
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .like__buttons {
+      a {
+         &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+         }
+      }
+   }
+}
+
+// MAIN>SECTION.PRICE
+
+@media screen and (max-width: 1200px) {
+   .price__wrapper {
+      flex-wrap: wrap;
+      align-content: space-between;
+   }
+   .price__column {
+      flex: 0 1 32%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .price__wrapper {
+      flex-direction: column;
+      align-content: center;
+   }
+   .price__column {
+      width: 50%;
+   }
+}
+
+@media screen and(max-width: 576px) {
+   .price__column {
+      width: 80%;
+   }
+}
+
+// MAIN>SECTION.CONTACT
+
+@media screen and (max-width: 576px) {
+   .contact__form {
+      flex-direction: column;
+      padding: 20px 10px;
+   }
+   .contact__wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   .contact__column {
+      &:not(:last-child) {
+         margin-bottom: 40px;
+      }
+   }
+}
