@@ -511,10 +511,12 @@ body.noscroll {
 }
 
 .price__column:hover .price__price {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   background: #008ed6;
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .price__column:hover .price__price > span {

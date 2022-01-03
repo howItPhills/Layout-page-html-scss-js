@@ -176,7 +176,6 @@
 .price {
    padding: 60px 0;
    text-align: center;
-
    &__header {
       margin-bottom: 70px;
    }
@@ -204,9 +203,9 @@
       transition: all 0.5s ease;
       &:hover {
          .price__price {
-            transition: all 0.5s ease;
             background: $brightBlue;
             color: $white;
+            user-select: none;
             > span {
                color: $white;
             }
